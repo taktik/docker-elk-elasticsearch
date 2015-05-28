@@ -7,7 +7,6 @@ RUN wget -O - http://packages.elasticsearch.org/GPG-KEY-elasticsearch | apt-key 
     ln -s /etc/elasticsearch/elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml && \
     ln -s /etc/elasticsearch/logging.yml /usr/share/elasticsearch/config/logging.yml
 
-VOLUME ["/var/lib/elasticsearch"]
 
 ADD conf/elasticsearch.default /etc/default/elasticsearch
 ADD conf/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
